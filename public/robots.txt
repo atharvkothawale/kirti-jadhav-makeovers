@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kirti-jadhav-makeovers.vercel.app
+
+# Sitemaps
+Sitemap: https://kirti-jadhav-makeovers.vercel.app/sitemap.xml

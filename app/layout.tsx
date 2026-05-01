@@ -16,11 +16,14 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kirti-jadhav-makeovers.vercel.app"),
-  title: "Kirti Jadhav Makeovers | Bridal Makeup Artist in Kalyan",
-  description: "Premium Bridal, Engagement, and Event Makeup Artist based in Kalyan, Maharashtra. Available for travel across Maharashtra.",
+  title: "Kirti Jadhav Makeovers | Bridal Makeup Artist in Kalyan, Maharashtra",
+  description: "Kirti Jadhav is a professional bridal makeup artist based in Kalyan, Maharashtra. Specializing in bridal, engagement, party makeup, nail art and hair styling. Available across Pune, Sangli, Satara, Kolhapur and all of Maharashtra.",
+  keywords: "bridal makeup artist Kalyan, makeup artist Kalyan Maharashtra, bridal makeup Pune, engagement makeup Kalyan, party makeup Maharashtra, nail art Kalyan, hair styling Kalyan, Kirti Jadhav Makeovers",
+  authors: [{ name: "Kirti Jadhav Makeovers" }],
+  creator: "Kirti Jadhav Makeovers",
   openGraph: {
-    title: "Kirti Jadhav Makeovers",
-    description: "Premium Bridal and Event Makeup Artist in Maharashtra.",
+    title: "Kirti Jadhav Makeovers | Bridal Makeup Artist in Kalyan",
+    description: "Professional bridal and event makeup artist based in Kalyan, Maharashtra. Available across Maharashtra.",
     url: "https://kirti-jadhav-makeovers.vercel.app",
     siteName: "Kirti Jadhav Makeovers",
     images: [
@@ -36,9 +39,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kirti Jadhav Makeovers",
-    description: "Premium Bridal and Event Makeup Artist in Maharashtra.",
+    title: "Kirti Jadhav Makeovers | Bridal Makeup Artist in Kalyan",
+    description: "Professional bridal and event makeup artist in Kalyan, Maharashtra.",
     images: ["/images/artist.jpeg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   icons: {
     icon: "/favicon.ico",
@@ -57,6 +64,32 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${playfair.variable} scroll-smooth antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Kirti Jadhav Makeovers",
+              "description": "Professional bridal makeup artist in Kalyan, Maharashtra",
+              "telephone": "+919769000005",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kalyan",
+                "addressRegion": "Maharashtra",
+                "addressCountry": "IN"
+              },
+              "url": "https://kirti-jadhav-makeovers.vercel.app",
+              "sameAs": [
+                "https://www.instagram.com/kirti_jmakeover"
+              ],
+              "priceRange": "₹₹",
+              "image": "https://kirti-jadhav-makeovers.vercel.app/images/logo.png"
+            })
+          }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col font-sans">
         <ScrollProgress />
         <Navbar />
