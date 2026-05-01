@@ -40,6 +40,10 @@ export const metadata: Metadata = {
     description: "Premium Bridal and Event Makeup Artist in Maharashtra.",
     images: ["/images/artist.jpeg"],
   },
+  icons: {
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({
