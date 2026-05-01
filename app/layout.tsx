@@ -52,6 +52,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
+  verification: {
+    google: "A9G6moblnI6Vv66SY5OiaSUPH2U437v6eLGHJsSU62k",
+  },
 };
 
 export default function RootLayout({
@@ -65,6 +68,7 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} scroll-smooth antialiased`}
     >
       <head>
+        <meta name="google-site-verification" content="A9G6moblnI6Vv66SY5OiaSUPH2U437v6eLGHJsSU62k" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
