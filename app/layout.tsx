@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Navbar from "@/components/Navbar";
 import ScrollProgress from "@/components/ScrollProgress";
 import "./globals.css";
@@ -98,6 +99,7 @@ export default function RootLayout({
         <ScrollProgress />
         <Navbar />
         <main className="flex-grow">{children}</main>
+        <GoogleAnalytics gaId="G-QP67BX0MB2" />
       </body>
     </html>
   );
