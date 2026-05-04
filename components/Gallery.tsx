@@ -127,7 +127,6 @@ export default function Gallery() {
                       alt={image.alt}
                       width={600}
                       height={800}
-                      style={{ width: "auto" }}
                       className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                     />
