@@ -37,6 +37,14 @@ const galleryImages = [
   { id: 21, src: "/images/gallery/nails/n2.webp", category: "Nails", alt: "Nail Art 2" },
   { id: 22, src: "/images/gallery/nails/n3.webp", category: "Nails", alt: "Nail Art 3" },
   { id: 23, src: "/images/gallery/nails/n4.webp", category: "Nails", alt: "Nail Art 4" },
+
+  // New Party Images
+  { id: 24, src: "/images/gallery/party/8.png", category: "Party", alt: "Party Makeup 13" },
+  { id: 25, src: "/images/gallery/party/9.png", category: "Party", alt: "Party Makeup 14" },
+  { id: 26, src: "/images/gallery/party/10.png", category: "Party", alt: "Party Makeup 15" },
+  { id: 27, src: "/images/gallery/party/11.png", category: "Party", alt: "Party Makeup 16" },
+  { id: 28, src: "/images/gallery/party/12.png", category: "Party", alt: "Party Makeup 17" },
+  { id: 29, src: "/images/gallery/party/13.png", category: "Party", alt: "Party Makeup 18" },
 ];
 
 export default function Gallery() {
